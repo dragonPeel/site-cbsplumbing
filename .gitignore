@@ -1,0 +1,11 @@
+# macOS junk
+.DS_Store
+
+# Node stuff (only matters if you ever add build tools later)
+node_modules/
+
+# Logs
+*.log
+
+# Env files (just in case you ever add keys later)
+.env
