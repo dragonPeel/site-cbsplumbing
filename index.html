@@ -1,1 +1,76 @@
-<HTML></HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CB Plumbing</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .accent {
+      color: #38bdf8;
+    }
+
+    p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>CB <span class="accent">Plumbing</span></h1>
+    <p>Commercial & complex residential plumbing</p>
+    <div class="badge">🚧 Site under construction</div>
+  </div>
+</body>
+</html>
