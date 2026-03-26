@@ -1,11 +1,10 @@
-# macOS junk
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
-# Node stuff (only matters if you ever add build tools later)
-node_modules/
+# Thumbnails
+._*
 
-# Logs
-*.log
-
-# Env files (just in case you ever add keys later)
-.env
+# VS Code settings (optional — your call)
+.vscode/
