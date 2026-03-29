@@ -4,52 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CBS Plumbing & Heating</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- HERO -->
     <header class="hero">
       <div class="container">
         <img
           src="/assets/logos/logo-white.webp"
           alt="CBS Plumbing & Heating"
-          class="logo"
+          class="hero__logo"
         />
 
-        <h1>Trusted Plumbing & Heating Since 2003</h1>
+        <h1 class="hero__title">Trusted Plumbing & Heating Since 2003</h1>
 
-        <p class="sub">
+        <p class="hero__sub">
           Serving St. John’s with reliable service and workmanship you don’t
           have to worry about.
         </p>
 
-        <p class="support">
+        <p class="hero__support">
           Focused on commercial and complex residential projects.
         </p>
 
-        <div class="cta-buttons">
-          <a href="#contact" class="btn primary">Request a Quote</a>
-          <a href="tel:17098349355" class="btn secondary"
-            >📞 Call 709-834-9355</a
-          >
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Request a Quote</a>
+          <a href="tel:17098349355" class="btn btn--secondary">
+            📞 Call 709-834-9355
+          </a>
         </div>
       </div>
     </header>
 
-    <section class="section alt">
+    <!-- SERVICES -->
+    <section class="section section--alt services">
       <div class="container">
         <h2>Services</h2>
 
-        <p class="section-intro">
+        <p class="section__intro">
           Reliable plumbing and heating solutions for commercial and complex
           residential projects.
         </p>
 
-        <div class="services-grid">
-          <div class="service-card">
+        <div class="services__grid">
+          <div class="services__card">
             <h3>Commercial Plumbing</h3>
             <p>
               Installations, maintenance, and system upgrades for commercial
@@ -57,7 +62,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="services__card">
             <h3>Heating Systems</h3>
             <p>
               Boilers, in-floor heating, and system servicing designed for
@@ -65,7 +70,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="services__card">
             <h3>New Construction</h3>
             <p>
               Full plumbing and heating setups for new builds and large-scale
@@ -73,7 +78,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="services__card">
             <h3>System Upgrades</h3>
             <p>
               Modernizing outdated systems to improve efficiency and meet
@@ -81,31 +86,30 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="services__card">
             <h3>Pipe Inspections</h3>
             <p>
-              Equipped to inspect, trace, and locate 2"–8" piping. HD video
-              inspection allows us to accurately identify and pinpoint issues
-              within your system.
+              HD video inspections to locate and diagnose issues in 2"–8" pipes.
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="services__card">
             <h3>Fire Hydrants</h3>
             <p>
-              Installation, repair, and maintenance of fire hydrant systems to
-              ensure proper operation and compliance.
+              Fire hydrant installation, repair, and maintenance to keep them
+              working and compliant.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- WORK -->
+    <section class="section work">
       <div class="container">
         <h2>Built for Real-World Work</h2>
 
-        <p class="section-lead">
+        <p class="section__lead">
           CBS Plumbing & Heating works in demanding commercial environments
           where reliability matters.
         </p>
@@ -121,52 +125,52 @@
       </div>
     </section>
 
+    <!-- GALLERY -->
     <section class="gallery">
       <div class="container">
         <h2>Recent Work</h2>
 
-        <p class="section-intro gallery-intro">
-          A look at recent commercial and industrial plumbing work completed
-          across Newfoundland and Labrador.
+        <p class="gallery__intro">
+          Some of the work we’ve been busy with lately.
         </p>
 
-        <div class="gallery-grid">
-          <div class="gallery-item">
+        <div class="gallery__grid">
+          <div class="gallery__item">
             <img
               src="assets/images/gallery1.webp"
               alt="Industrial plumber tightening valve on large pipe"
             />
           </div>
 
-          <div class="gallery-item">
+          <div class="gallery__item">
             <img
               src="assets/images/gallery2.webp"
               alt="Commercial mechanical room with boilers and piping"
             />
           </div>
 
-          <div class="gallery-item">
+          <div class="gallery__item">
             <img
               src="assets/images/gallery3.webp"
               alt="Technician inspecting pressure gauges in mechanical room"
             />
           </div>
 
-          <div class="gallery-item">
+          <div class="gallery__item">
             <img
               src="assets/images/gallery4.webp"
               alt="Excavator digging trench for underground piping"
             />
           </div>
 
-          <div class="gallery-item">
+          <div class="gallery__item">
             <img
               src="assets/images/gallery5.webp"
               alt="Commercial boiler system installation"
             />
           </div>
 
-          <div class="gallery-item">
+          <div class="gallery__item">
             <img
               src="assets/images/gallery6.webp"
               alt="Workers installing underground pipe in trench"
@@ -176,16 +180,18 @@
       </div>
     </section>
 
-    <section class="section">
+    <!-- WHY -->
+    <section class="section why">
       <div class="container">
         <h2>Why Choose Us</h2>
-        <p class="section-intro">
+
+        <p class="section__intro">
           Trusted experience, reliable service, and a focus on getting the job
           done right the first time.
         </p>
 
-        <div class="grid">
-          <div class="feature">
+        <div class="why__grid">
+          <div class="why__item">
             <h3>Over 20 Years Experience</h3>
             <p>
               Serving St. John’s and surrounding areas since 2003 with proven
@@ -193,7 +199,7 @@
             </p>
           </div>
 
-          <div class="feature">
+          <div class="why__item">
             <h3>Commercial-Focused</h3>
             <p>
               Experienced in handling larger, more complex projects for
@@ -201,12 +207,12 @@
             </p>
           </div>
 
-          <div class="feature">
+          <div class="why__item">
             <h3>Reliable & On Schedule</h3>
             <p>We show up when we say we will and complete work efficiently.</p>
           </div>
 
-          <div class="feature">
+          <div class="why__item">
             <h3>Work You Can Trust</h3>
             <p>All work is backed by warranty and built to last.</p>
           </div>
@@ -214,7 +220,8 @@
       </div>
     </section>
 
-    <section class="section remote-work">
+    <!-- REMOTE -->
+    <section class="section remote">
       <div class="container">
         <h2>Remote & Large-Scale Projects</h2>
 
@@ -237,6 +244,7 @@
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="cta" id="contact">
       <div class="container">
         <h2>Have a Project in Mind?</h2>
@@ -246,35 +254,34 @@
           CBS Plumbing is ready to help.
         </p>
 
-        <div class="cta-buttons">
-          <a href="mailto:info@cbsplumbing.com" class="btn primary">
+        <div class="cta__actions">
+          <a href="mailto:info@cbsplumbing.com" class="btn btn--primary">
             Request a Quote for Your Project
           </a>
 
-          <p class="cta-phone">or call 709-834-9355</p>
+          <p class="cta__phone">or call 709-834-9355</p>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-left">
+      <div class="container footer__content">
+        <div>
           <strong>CBS Plumbing & Heating</strong>
           <p>Serving St. John’s & surrounding areas since 2003.</p>
         </div>
 
-        <div class="footer-right">
+        <div>
           <p>Email: info@cbsplumbing.com</p>
           <p>Phone: 709-834-9355</p>
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer__bottom">
         <p>
           Crafted by
-          <a href="https://dragonpeel.com" target="_blank" rel="noopener">
-            DragonPeel
-          </a>
+          <a href="https://dragonpeel.com" target="_blank">DragonPeel</a>
         </p>
       </div>
     </footer>
