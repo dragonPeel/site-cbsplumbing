@@ -3,14 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CBS Plumbing & Heating</title>
+    <meta
+      name="description"
+      content="CBS Plumbing & Heating provides reliable commercial plumbing services in St. John’s and across Newfoundland & Labrador. Call today for a quote."
+    />
+    <title>CBS Plumbing & Heating | Commercial Plumbing St. John’s NL</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "PlumbingService",
+        "name": "CBS Plumbing & Heating",
+        "telephone": "+17098349355",
+        "areaServed": "St. John's, NL",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "St. John's",
+          "addressRegion": "NL",
+          "addressCountry": "CA"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -23,15 +42,14 @@
           class="hero__logo"
         />
 
-        <h1 class="hero__title">Trusted Plumbing & Heating Since 2003</h1>
+        <h1 class="hero__title">
+          Commercial Plumbing & Heating in St. John’s, NL
+        </h1>
+        <p class="hero__support">Also serving complex residential projects.</p>
+        <p class="hero__tag">Done right since 2003</p>
 
         <p class="hero__sub">
-          Serving St. John’s with reliable service and workmanship you don’t
-          have to worry about.
-        </p>
-
-        <p class="hero__support">
-          Focused on commercial and complex residential projects.
+          Reliable service and workmanship you can count on.
         </p>
 
         <div class="hero__actions">
@@ -51,6 +69,10 @@
         <p class="section__intro">
           Reliable plumbing and heating solutions for commercial and complex
           residential projects.
+        </p>
+        <p class="section__intro">
+          We provide commercial plumbing services throughout St. John’s, Mount
+          Pearl, Paradise, and across Newfoundland and Labrador.
         </p>
 
         <div class="services__grid">
@@ -131,7 +153,7 @@
         <h2>Recent Work</h2>
 
         <p class="gallery__intro">
-          Some of the work we’ve been busy with lately.
+          Real job sites. Real work. No stock photos.
         </p>
 
         <div class="gallery__grid">
@@ -208,7 +230,7 @@
           </div>
 
           <div class="why__item">
-            <h3>Reliable & On Schedule</h3>
+            <h3>On Schedule & On Budget</h3>
             <p>We show up when we say we will and complete work efficiently.</p>
           </div>
 
@@ -247,19 +269,59 @@
     <!-- CTA -->
     <section class="cta" id="contact">
       <div class="container">
-        <h2>Have a Project in Mind?</h2>
+        <h2>Get a Quote or Call Us Today</h2>
 
         <p>
           Whether it’s a commercial build, system upgrade, or remote project,
           CBS Plumbing is ready to help.
         </p>
 
-        <div class="cta__actions">
-          <a href="mailto:info@cbsplumbing.com" class="btn btn--primary">
-            Request a Quote for Your Project
-          </a>
+        <div id="form-wrapper">
+          <!-- FORM -->
+          <form
+            id="quote-form"
+            action="https://formspree.io/f/xlgovdqp"
+            method="POST"
+            accept-charset="UTF-8"
+            class="cta__form"
+          >
+            <div class="form__grid">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="tel" name="phone" placeholder="Phone" required />
+              <input type="email" name="email" placeholder="Email (optional)" />
+            </div>
 
-          <p class="cta__phone">or call 709-834-9355</p>
+            <input
+              type="hidden"
+              name="_subject"
+              value="New CBS Plumbing Quote Request"
+            />
+
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell us about your project"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn btn--primary">
+              Request a Quote
+            </button>
+          </form>
+
+          <!-- SUCCESS MESSAGE -->
+          <div id="form-success" class="form-success">
+            <div class="form-success__card">
+              <h3>Thanks — We’ll Be in Touch</h3>
+              <p>
+                Your request has been received. We’ll get back to you shortly.
+              </p>
+
+              <p class="form-success__call">
+                If it’s urgent, call <strong>709-834-9355</strong>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -267,23 +329,31 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer__content">
-        <div>
+        <div class="footer__left">
           <strong>CBS Plumbing & Heating</strong>
           <p>Serving St. John’s & surrounding areas since 2003.</p>
         </div>
 
-        <div>
+        <div class="footer__right">
           <p>Email: info@cbsplumbing.com</p>
           <p>Phone: 709-834-9355</p>
         </div>
       </div>
 
       <div class="footer__bottom">
-        <p>
-          Crafted by
-          <a href="https://dragonpeel.com" target="_blank">DragonPeel</a>
-        </p>
+        <div class="container">
+          <p>
+            Crafted by
+            <a href="https://dragonpeel.com" target="_blank">DragonPeel</a>
+          </p>
+        </div>
       </div>
     </footer>
+
+    <div class="mobile-call">
+      <a href="tel:17098349355" class="call-now"> 📞 Call Now </a>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
