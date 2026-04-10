@@ -83,7 +83,7 @@ body {
 .hero__title {
   font-size: 2.75rem;
   font-weight: 700;
-  max-width: 700px;
+  max-width: 800px;
   margin-bottom: 1rem;
 }
 
@@ -105,7 +105,7 @@ body {
 .hero__tag {
   margin-bottom: 1rem;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 800;
   opacity: 0.8;
 }
 
@@ -255,8 +255,13 @@ body {
       rgba(19, 33, 58, 0.35) 65%,
       rgba(19, 33, 58, 0.15) 100%
     ),
-    url("/assets/images/remote-work-helicopter.webp") 65% center / cover
-      no-repeat;
+    url("/assets/images/remote-work-helicopter.webp");
+
+  background-position:
+    left center,
+    55% 1%;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
 
   color: #ffffff;
 }
@@ -316,7 +321,17 @@ body {
 }
 
 .cta__form button {
-  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 0.9rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.cta__form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .cta .container {
@@ -325,8 +340,20 @@ body {
   align-items: center;
 }
 
+.cta__trust {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1rem 0 1.5rem;
+  color: #1f2937;
+}
+
 /* =========================
-   SUCCESS (FIXED)
+   SUCCESS
 ========================= */
 
 #form-success {
@@ -378,20 +405,38 @@ body {
 .footer {
   background: #0f1e35;
   color: #cbd5e1;
+
+  padding-top: 50px; /* 👈 creates separation from CTA */
 }
 
 /* TOP CONTENT */
 .footer__content {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   gap: 2rem;
-  padding: 3rem 2.5rem;
+  min-height: 100px;
+  padding: 10px 2.5rem; /* slightly tighter */
 }
 
-.footer__left strong {
-  display: block;
-  margin-bottom: 0.75rem;
+.footer-title {
+  font-weight: 600;
   color: #ffffff;
+}
+
+.footer-sub {
+  opacity: 0.7;
+}
+
+.footer__left p,
+.footer__right p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.footer__left p + p,
+.footer__right p + p {
+  margin-top: 6px;
 }
 
 .footer__right {
@@ -400,24 +445,47 @@ body {
 
 /* BOTTOM BAR */
 .footer__bottom {
+  background: #0f243d;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding: 20px 0; /* 👈 this is the main height control */
 }
 
 .footer__bottom .container {
-  padding: 1.5rem 2.5rem;
-  text-align: center;
+  padding: 5px 2rem; /* kill the vertical padding */
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .footer__content {
-    flex-direction: column;
-    text-align: center;
-  }
+.footer-credit {
+  display: flex;
+  flex-direction: column; /* stack */
+  align-items: center;
+  justify-content: center;
 
-  .footer__right {
-    text-align: center;
-  }
+  gap: 5px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-credit a {
+  display: flex;
+  align-items: center;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-credit img {
+  height: 50px;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.footer-credit a:hover {
+  color: #c08457;
+}
+
+.footer-credit a:hover img {
+  opacity: 1;
 }
 
 /* Hide by default (desktop) */
@@ -441,5 +509,24 @@ body {
     z-index: 999;
     font-weight: 600;
     letter-spacing: 0.3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta__trust {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__right {
+    text-align: center;
   }
 }
